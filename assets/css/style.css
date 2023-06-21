@@ -143,11 +143,6 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 #subscribe-wrap .btn-wrap input:hover { background-position: 128px 22px; background-color: #BDE738;}
 #subscribe-wrap { position: relative; overflow: hidden; }
 #subscribe-wrap .container { position: relative; z-index: 3 }
-
-
-
-
-
 /*----- proud-wrap ------*/
 #proud-wrap { background: #2D58D7; padding: 130px 0px 120px; position: relative; overflow: hidden; }
 #proud-wrap:after { content: ''; display: block; position: absolute; width: 109%; height: 330px; bottom: 0; left: 0; background: url(../images/proud-illus.svg) no-repeat; background-position: -40px 10px; background-size: cover; }
@@ -173,7 +168,7 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 #footer .ftr-menu .item.add-wrap { min-width: 200px; }
 #footer h3 { font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: normal; color: #717171; margin: 20px 0; }
 .newsletter-form { padding-right: 80px; }
-#footer .newsletter-form .form-control { border: 1px solid #fff; border-radius: 50px !important; padding: 18px 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: auto; padding-right: 70px; color:#fff; }
+#footer .newsletter-form .form-control { border: 1px solid #fff !important; border-radius: 50px !important; padding: 18px 20px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height: auto; padding-right: 70px; color:#fff; }
 .newsletter-form .form-wrap { position: relative; }
 .newsletter-form .btn-wrap { position: absolute; top: 0; right: 0; }
 .newsletter-form .btn-wrap input { height: 55px; width: 69px; overflow: hidden; text-indent: -250px; border: none; background: url(../images/learn.svg) no-repeat; background-size: 26px; background-position: 17px 18px; }
@@ -184,6 +179,9 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 #rights-wrap a { color: #717171; }
 #rights-wrap .inner { display: flex; justify-content: space-between; }
 
+#footer ::-webkit-input-placeholder { color: #fff; opacity: 1 !important; }
+#footer :-moz-placeholder { color: #fff; opacity: 1 !important; }
+#footer ::-moz-placeholder { color: #fff; opacity: 1 !important; }
 /*----- Responsive ------ */
 @media(min-width:992px) {
 	#banner .owl-carousel { position: inherit; }
@@ -217,7 +215,7 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 	h3 { font-size: 1.4rem; }
 	#banner .inner { padding: 20px; }
 	#banner .main-slider { background-position: 180% 162%; background-size: 76%; }
-	#music-edu h1 { font-size: 2.55rem; top: auto; }
+	#music-edu h1 { font-size: 2rem; top: auto; margin-bottom:20px; }
 	.partners-wrap {top: auto;}
 	#accodr-wrap .collapsible-header .inner, #accodr-wrap .collapsible-body .inner { padding-left: 140px; padding-right: 150px; }
 	#accodr-wrap .inner .counter { left: 30px; top: 54px; font-size: 2.5rem; }
@@ -225,7 +223,7 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 	#experience-wrap .inner .video-wrap { display: flex; justify-content: center; flex-direction: column; }
 	#experience-wrap .inner .video-wrap:after { width: 80px; height: 80px; margin-left: -40px; margin-top: -40px; }
 	#proud-wrap:after { background-position: -40px 170px; }
-	#footer .newsletter-form { margin-bottom: 30px; }
+	#footer .newsletter-form { margin-bottom: 30px; width:70%; }
 	#footer .inner { display: block; }
 	#footer .ftr-menu { width: 100%; }
 	#info-wrap .inner { font-size: 1.4rem; }
@@ -233,6 +231,9 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 	#testimonial-wrap { background-position: 0% 110%; }
 	.partners-wrap .item{ width:50%; padding:4px 0; }
 	.partners-wrap{ max-width:60%; }
+	#why-global {padding-bottom: 10px;}
+	#why-global .owl-dots{ padding-top:20px;}
+	#programs-wrap{ padding:40px 0;}
 }
 @media(max-width:680px) {
 	#banner .main-slider { background-position: 130% 116%; background-size: 76%; }
@@ -287,10 +288,9 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 	#music-edu .container { max-width: 95%; width: 94%; }
 	#music-edu h1 { font-size: 9vw; margin-bottom: 30px; }
 	#music-edu .partners-wrap { max-width: 100%; }
-	#music-edu .img-overlay { min-height: 400px; }
 	#music-edu .veena-bg { margin: 0 auto; margin-top: -90%; width: 55%; margin-bottom: 60px; display: block; }
 	#music-edu .tabala-img { margin: 0 auto; width: 85%; margin-bottom: -70px; margin-top: 80px; display: block; }
-	#subscribe-wrap .btn-wrap{ position:relative; }
+	#subscribe-wrap .btn-wrap{ position:relative; padding-top:10px; }
 	#subscribe-wrap .form-wrap{ padding-right:0; }
 
 
