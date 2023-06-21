@@ -63,12 +63,14 @@ a.know-btn:hover:after { transform: translate(7px, 0px); }
 #why-global { padding: 100px 0; }
 #why-global h2 { margin-top: 18px }
 #why-global .owl-nav { display: none; }
-
+.partners-wrap { position: relative; top: -40px; }
 /*----- programmes ------*/
 #programs-wrap { padding: 87px 0; overflow:hidden; width:100% }
 #programs-wrap h2 { margin-bottom: 40px; }
 #programs-wrap .owl-nav { position: absolute; top: -120px; right: 0; }
 #programs-wrap .owl-dots { display: none; }
+#programs-wrap .desc { min-height: 100px; }
+
 
 /*----- music-edu ------*/
 #music-edu { position: relative; }
@@ -76,8 +78,8 @@ a.know-btn:hover:after { transform: translate(7px, 0px); }
 #music-edu .img-overlay { position: absolute; width: 100%; height: 100%; top: 0; left: 0; }
 #music-edu h1 { margin: 0; position: relative; top: -50px; font-size: 4.55rem; color: #fff; }
 #music-edu .img-overlay { display: flex; justify-content: center; flex-direction: column; }
-.partners-wrap { display: flex; flex-wrap: wrap; max-width: 530px; }
-.partners-wrap .item { width: 50%; display: flex; justify-content: center; flex-direction: column; text-align: center;padding:16px 0; }
+.partners-wrap { display: flex; flex-wrap: wrap; }
+.partners-wrap .item { width: 25%; display: flex; justify-content: center; flex-direction: column; text-align: center;padding:16px 0; }
 .partners-wrap .item img { max-width: 220px; }
 #music-edu .container { padding-left: 20px; }
 #music-edu .veena-bg, #music-edu .tabala-img { display: none; }
@@ -101,10 +103,6 @@ a.know-btn:hover:after { transform: translate(7px, 0px); }
 #accodr-wrap .collapsible-body .inner .collapsible-header { width: 70px; height: 70px; position: absolute; top: 50%; right: 48px; margin-top: -35px; background: url(../images/close.svg) no-repeat; display: block; }
 #accodr-wrap li.active .collapsible-header { display: none; }
 #accodr-wrap .collapsible-body .container { padding-bottom: 100px; padding-top: 40px; }
-
-
-
-
 #accodr-wrap .berklee { background: url(../images/berklee-clg.png) no-repeat; }
 #accodr-wrap .college-2 { background: url(../images/college-2.jpg) no-repeat; }
 #accodr-wrap .college-3 { background: url(../images/college-3.jpg) no-repeat; }
@@ -135,7 +133,7 @@ a.know-btn:hover:after { transform: translate(7px, 0px); }
 
 /*----- subscribe-wrap ------*/
 
-#subscribe-wrap { background: #BB85E2; background-size: 100%; background-position: bottom center; padding: 40px 0 60px; text-align: center; color: #fff; }
+#subscribe-wrap { background: #BB85E2 url(../images/subscribe-bg.png) no-repeat; background-size: 100%; background-position: bottom center; padding: 40px 0 60px; text-align: center; color: #fff; }
 #subscribe-wrap h2{ font-weight:normal; }
 input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shadow: none !important; }
 #subscribe-wrap .form-wrap { position: relative; max-width: 600px; padding-right: 200px; margin: 0 auto; }
@@ -145,7 +143,6 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 #subscribe-wrap .btn-wrap input:hover { background-position: 128px 22px; background-color: #BDE738;}
 #subscribe-wrap { position: relative; overflow: hidden; }
 #subscribe-wrap .container { position: relative; z-index: 3 }
-#subscribe-wrap:before { content: ''; display: block; background: url(../images/suscribe-illus.svg) no-repeat; width: 100%; height: 100px; position: absolute; background-size: 110%; bottom: 0; left: 0; z-index: 1; }
 
 
 
@@ -211,15 +208,17 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 	#music-edu .container { max-width: 70%; width: 70%; }
     #music-edu h1 { font-size: 4vw; }
     .partners-wrap .item img { max-width:80%; }
-    .partners-wrap{ max-width:60%; }
+
 }
 @media(max-width:992px) {
+	#banner { width:100%; overflow:hidden; }
 	.container { width:90%; padding:0 10px; }
 	#header .logo-wrap { width: 260px; }
 	h3 { font-size: 1.4rem; }
 	#banner .inner { padding: 20px; }
 	#banner .main-slider { background-position: 180% 162%; background-size: 76%; }
 	#music-edu h1 { font-size: 2.55rem; top: auto; }
+	.partners-wrap {top: auto;}
 	#accodr-wrap .collapsible-header .inner, #accodr-wrap .collapsible-body .inner { padding-left: 140px; padding-right: 150px; }
 	#accodr-wrap .inner .counter { left: 30px; top: 54px; font-size: 2.5rem; }
 	#accodr-wrap .collapsible-header  .inner .counter { top: -10px; }
@@ -232,6 +231,8 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 	#info-wrap .inner { font-size: 1.4rem; }
 	#testimonial-wrap h2 { font-size: 2.2rem; }
 	#testimonial-wrap { background-position: 0% 110%; }
+	.partners-wrap .item{ width:50%; padding:4px 0; }
+	.partners-wrap{ max-width:60%; }
 }
 @media(max-width:680px) {
 	#banner .main-slider { background-position: 130% 116%; background-size: 76%; }
@@ -253,7 +254,7 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 	#why-global .owl-dots{ padding-top:20px; }
 	#programs-wrap { padding: 40px 0 }
 	#programs-wrap h2 { margin-bottom: 40px; font-size: 30px; }
-	#programs-wrap .owl-nav{ position:relative; top:auto; padding-top:2px; }
+	#programs-wrap .owl-nav{ position:relative; top:auto; padding:20px 0 20px; }
 	div#dream-wrap h2 { font-size: 30px; }
 	#accodr-wrap .inner .counter { position: relative; top: auto; left: auto; }
 	#accodr-wrap .collapsible-header .inner { padding: 0px 20px; }
@@ -291,6 +292,6 @@ input:focus { border-bottom: none !important; -webkit-box-shadow: none; box-shad
 	#music-edu .tabala-img { margin: 0 auto; width: 85%; margin-bottom: -70px; margin-top: 80px; display: block; }
 	#subscribe-wrap .btn-wrap{ position:relative; }
 	#subscribe-wrap .form-wrap{ padding-right:0; }
-	#subscribe-wrap:before { height: 50px; background-size: 150%; }
+
 
 }
