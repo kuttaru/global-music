@@ -25,7 +25,7 @@ a.know-btn:hover:after { transform: translate(7px, 0px); }
 .lear-btn { padding-right: 50px; position: relative; font-weight: 600; }
 .lear-btn:after { content: ''; display: block; width: 20px; height: 20px; position: absolute; top: 5px; right: 20px; background: url(../images/learn.svg) no-repeat; -moz-transition: all .4s ease; transition: all .4s ease; }
 .lear-btn:hover:after { transform: translate(7px, 0px); }
-.owl-carousel {cursor: grab;}
+.owl-carousel .owl-stage-outer{cursor: grab;}
 
 /*----- Header ------*/
 #header { position: absolute; width: 100%; top: 0; left: 0; z-index: 99 }
